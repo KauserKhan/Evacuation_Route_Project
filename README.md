@@ -1,4 +1,4 @@
- *****************************                                               Evacuation Routing Service***************************************
+ *****************************                  Evacuation Routing Service***************************************
 A Spring Boot application that computes safe evacuation routes using road and flood GeoJSON data.  
 It builds a weighted graph of roads, increases edge weights for flooded areas, and exposes REST endpoints to query routes in **GeoJSON** format.
 ---
