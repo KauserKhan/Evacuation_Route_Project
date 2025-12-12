@@ -1,11 +1,9 @@
-Evacuation Routing Service
-
+ *****************************                                               Evacuation Routing Service***************************************
 A Spring Boot application that computes safe evacuation routes using road and flood GeoJSON data.  
 It builds a weighted graph of roads, increases edge weights for flooded areas, and exposes REST endpoints to query routes in **GeoJSON** format.
-
 ---
-
 ## Features
+
 - Load road and flood geometries from GeoJSON files (`/data/roads.geojson`, `/data/floods.geojson`).
 - Build a weighted graph with JGraphT.
 - Snap start/end coordinates to nearest road nodes.
@@ -32,6 +30,7 @@ It builds a weighted graph of roads, increases edge weights for flooded areas, a
    git clone https://github.com/your-username/evacuation-routing.git
    cd evacuation-routing
 ----------------------------------------------------------------------------------------------------------------------------------
+
 **Build the project**:
 mvn clean install
 
@@ -39,9 +38,13 @@ mvn clean install
 mvn spring-boot:run
 
 **Place your GeoJSON files in src/main/resources/data/:**
+
 roads.geojson → LineString/MultiLineString features
+
 floods.geojson → Polygon/MultiPolygon features
+
 -----------------------------------------------------------------------------------------------------------------------------------
+
 **API Endpoints Test URL**
 
 **Health Check**
